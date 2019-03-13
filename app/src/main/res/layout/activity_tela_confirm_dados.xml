@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TelaConfirmDados">
+
+    <TextView
+        android:id="@+id/tvLabelDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvLabelDados"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvGetNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGetNome"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvGetEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGetEmail"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvGetTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGetTel"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnVoltar" />
+</LinearLayout>

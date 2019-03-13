@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AtvAngelo</string>
+    <string name="ivLogo">Logo</string>
+    <string name="tvMainScreen">7º - Sistemas de Informação</string>
+    <string name="tvLabel">Cadastro</string>
+    <string name="edtNome"/>
+    <string name="edtEmail"/>
+    <string name="edtTelefone"/>
+    <string name="btnNextScreen">Cadastrar</string>
+    <string name="tvLabelDados">Confirme seus Dados</string>
+    <string name="tvGetNome" />
+    <string name="tvGetEmail" />
+    <string name="tvGetTel" />
+    <string name="btnVoltar">Voltar</string>
+</resources>
