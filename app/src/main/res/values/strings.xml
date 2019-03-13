@@ -6,10 +6,15 @@
     <string name="edtNome"/>
     <string name="edtEmail"/>
     <string name="edtTelefone"/>
+    <string name="edtEnd"/>
+    <string name="edtCurso"/>
     <string name="btnNextScreen">Cadastrar</string>
     <string name="tvLabelDados">Confirme seus Dados</string>
     <string name="tvGetNome" />
     <string name="tvGetEmail" />
     <string name="tvGetTel" />
+    <string name="tvGetEnd" />
+    <string name="tvGetCurso" />
+
     <string name="btnVoltar">Voltar</string>
 </resources>

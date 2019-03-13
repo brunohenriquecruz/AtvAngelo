@@ -13,6 +13,8 @@ public class TelaConfirmDados extends AppCompatActivity {
     TextView nome;
     TextView tel;
     TextView email;
+    TextView end;
+    TextView curso;
     Button voltar;
 
 
@@ -26,11 +28,16 @@ public class TelaConfirmDados extends AppCompatActivity {
         nome = (TextView) findViewById(R.id.tvGetNome);
         email = (TextView) findViewById(R.id.tvGetEmail);
         tel = (TextView) findViewById(R.id.tvGetTel);
+        end = (TextView) findViewById(R.id.tvGetEnd);
+        curso = (TextView) findViewById(R.id.tvGetCurso);
+
         voltar = (Button) findViewById(R.id.btnVoltar);
 
         nome.setText(bundle.getString("extraNome"));
         email.setText(bundle.getString("extraEmail"));
         tel.setText(bundle.getString("extraTel"));
+        end.setText(bundle.getString("extraEnd"));
+        curso.setText(bundle.getString("extraCurso"));
 
         voltar.setOnClickListener(new View.OnClickListener() {
             @Override

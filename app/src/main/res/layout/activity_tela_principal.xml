@@ -42,6 +42,24 @@
         android:inputType="phone"
         android:text="@string/edtTelefone" />
 
+    <EditText
+        android:id="@+id/edtEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite seu endereço"
+        android:inputType="textPersonName"
+        android:text="@string/edtEnd" />
+
+    <EditText
+        android:id="@+id/edtCurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite seu curso"
+        android:inputType="textPersonName"
+        android:text="@string/edtCurso" />
+
     <Button
         android:id="@+id/btnNextScreen"
         android:layout_width="match_parent"

@@ -13,6 +13,8 @@ public class TelaIPrincipal extends AppCompatActivity {
     EditText telefone;
     EditText email;
     Button cadastrar;
+    EditText end;
+    EditText curso;
 
 
     @Override
@@ -23,6 +25,9 @@ public class TelaIPrincipal extends AppCompatActivity {
         nome = (EditText) findViewById(R.id.edtNome);
         telefone = (EditText) findViewById(R.id.edtTelefone);
         email = (EditText) findViewById(R.id.edtEmail);
+        end = (EditText) findViewById(R.id.edtEnd);
+        curso = (EditText) findViewById(R.id.edtCurso);
+
         cadastrar = (Button) findViewById(R.id.btnNextScreen);
         cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +35,9 @@ public class TelaIPrincipal extends AppCompatActivity {
                 Intent i = new Intent(TelaIPrincipal.this,TelaConfirmDados.class);
                 i.putExtra("extraNome", nome.getText().toString());
                 i.putExtra("extraEmail", email.getText().toString());
-                i.putExtra("extraTel", nome.getText().toString());
+                i.putExtra("extraTel", telefone.getText().toString());
+                i.putExtra("extraEnd", end.getText().toString());
+                i.putExtra("extraCurso", curso.getText().toString());
 
                 startActivity(i);
 

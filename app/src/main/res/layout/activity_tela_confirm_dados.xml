@@ -36,6 +36,20 @@
         android:text="@string/tvGetTel"
         android:textAlignment="center" />
 
+    <TextView
+        android:id="@+id/tvGetEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGetCurso"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvGetCurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGetCurso"
+        android:textAlignment="center" />
+
     <Button
         android:id="@+id/btnVoltar"
         android:layout_width="match_parent"
