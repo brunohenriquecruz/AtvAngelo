@@ -3,6 +3,7 @@ package com.example.brunohenrique.atvangelo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +15,7 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
-public class TelaConfirmDados extends AppCompatActivity implements View.OnClickListener {
+public class TelaConfirmDados extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     TextView nome, tel, email, end, curso, linguagens, turno, area;
     Button selecionar, adicionar;
@@ -58,8 +59,10 @@ public class TelaConfirmDados extends AppCompatActivity implements View.OnClickL
         adapterHabilidades = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, arrayHabilidades);
         listhabilidades = (ListView) findViewById(R.id.lvHabilidades);
         listhabilidades.setAdapter(adapterHabilidades);
+        listhabilidades.setOnItemClickListener(this);
 
         adicionar = (Button) findViewById(R.id.btnAdicionar);
+        adicionar.setOnClickListener(this);
 
     }
 
@@ -77,11 +80,16 @@ public class TelaConfirmDados extends AppCompatActivity implements View.OnClickL
                         arrayHabilidades.add(tvHabilidades);
                         adapterHabilidades.notifyDataSetChanged();
                     }
+                    edtHabilidades.setText("");
                     break;
             }
-
     }
 
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        arrayHabilidades.remove(position);
+        adapterHabilidades.notifyDataSetChanged();
+    }
 }
 
 //        voltar.setOnClickListener(new View.OnClickListener() {
