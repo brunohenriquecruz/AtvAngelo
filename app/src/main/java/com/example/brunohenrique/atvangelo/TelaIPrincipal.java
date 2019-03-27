@@ -44,7 +44,7 @@ public class TelaIPrincipal extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
 
         String linguagens = getLinguagens();
-        String turno = getLinguagens();
+        String turno = getTurno();
 
         Intent i = new Intent(TelaIPrincipal.this, TelaConfirmDados.class);
         i.putExtra("extraNome", nome.getText().toString());

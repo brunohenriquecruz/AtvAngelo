@@ -1,14 +1,10 @@
 <resources>
     <string name="app_name">AtvAngelo</string>
     <string name="ivLogo">Logo</string>
+
+    <!--TextView-->
     <string name="tvMainScreen">7º - Sistemas de Informação</string>
     <string name="tvLabel">Cadastro Acadêmico</string>
-    <string name="edtNome"/>
-    <string name="edtEmail"/>
-    <string name="edtTelefone"/>
-    <string name="edtEnd"/>
-    <string name="edtCurso"/>
-    <string name="btnNextScreen">Cadastrar</string>
     <string name="tvLabelDados">Confirme seus Dados</string>
     <string name="tvGetNome" >Digite seu nome</string>
     <string name="tvGetEmail" >Digite seu email</string>
@@ -16,25 +12,41 @@
     <string name="tvGetEnd" >Digite seu endereço</string>
     <string name="tvGetCurso" >Digite seu curso</string>
     <string name="tvLabelLinguagens">Linguagens</string>
+    <string name="tvSelectLing">Selecione a linguagem apreendida</string>
+    <string name="tvTurno">Selecione o turno de preferência</string>
+    <string name="tvLabelTurno">Turnos preferidos </string>
+    <string name="tvHabilidades">Digite suas habilidades </string>
+    <string name="tvGetTurno" />
+    <string name="tvLabelSpinnerArea">Escolha área de atuação</string>
+    <string name="tvGetArea" />
+    <string name="tvLinguagens" />
 
+    <!--RadioButton-->
+    <string name="rbMatutino">Matutino</string>
+    <string name="rbVespertino">Verspertino</string>
+    <string name="rbNoturno">Noturno</string>
+    <string name="rbEad">EAD</string>
 
-    <string name="btnVoltar">Voltar</string>
+    <!--ComboBox-->
     <string name="cbJava">Java</string>
     <string name="cbJavaScript">JavaScript</string>
     <string name="cbPhp">PHP</string>
     <string name="cbPython">Python</string>
     <string name="cbCsharp">C#</string>
     <string name="cbCobol">Cobol</string>
-    <string name="tvLinguagens" />
-    <string name="tvSelectLing">Selecione a linguagem apreendida</string>
-    <string name="tvTurno">Selecione o turno de preferência</string>
-    <string name="rbMatutino">Matutino</string>
-    <string name="rbVespertino">Verspertino</string>
-    <string name="rbNoturno">Noturno</string>
-    <string name="rbEad">EAD</string>
-    <string name="tvLabelTurno">Turnos preferidos </string>
-    <string name="tvGetTurno"> </string>
-    <string name="tvLabelSpinnerArea">Escolha área de atuação</string>
+
+    <!--Button-->
+    <string name="btnSelecionar">Selecionar</string>
+    <string name="btnNextScreen">Cadastrar</string>
+    <string name="btnAdicionar">Adicionar</string>
+
+    <!--EditText-->
+    <string name="edtNome"/>
+    <string name="edtEmail"/>
+    <string name="edtTelefone"/>
+    <string name="edtEnd"/>
+    <string name="edtCurso"/>
+    <string name="edtHabilidades"/>
 
 
 </resources>

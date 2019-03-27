@@ -5,17 +5,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class TelaConfirmDados extends AppCompatActivity {
+import java.util.ArrayList;
 
-    TextView nome, tel, email, end, curso, linguagens, turno;
-    Button voltar;
-    Spinner area;
+public class TelaConfirmDados extends AppCompatActivity implements View.OnClickListener {
+
+    TextView nome, tel, email, end, curso, linguagens, turno, area;
+    Button selecionar, adicionar;
+    Spinner spnarea;
+    ListView listhabilidades;
     ArrayAdapter<String> adapterArea;
+    ArrayAdapter<String> adapterHabilidades;
+    ArrayList<String> arrayHabilidades;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +38,8 @@ public class TelaConfirmDados extends AppCompatActivity {
         curso = (TextView) findViewById(R.id.tvGetCurso);
         linguagens = (TextView) findViewById(R.id.tvLinguagens);
         turno = (TextView) findViewById(R.id.tvGetTurno);
-
-        voltar = (Button) findViewById(R.id.btnVoltar);
+        selecionar = (Button) findViewById(R.id.btnSelecionar);
+        selecionar.setOnClickListener(this);
 
         nome.setText(bundle.getString("extraNome"));
         email.setText(bundle.getString("extraEmail"));
@@ -44,16 +51,43 @@ public class TelaConfirmDados extends AppCompatActivity {
 
         String[] areas = {"Back-End", "API", "Front-End"};
         adapterArea = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, areas);
-        area = (Spinner) findViewById(R.id.spArea);
-        area.setAdapter(adapterArea);
+        spnarea = (Spinner) findViewById(R.id.spArea);
+        spnarea.setAdapter(adapterArea);
 
+        arrayHabilidades = new ArrayList<String>();
+        adapterHabilidades = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, arrayHabilidades);
+        listhabilidades = (ListView) findViewById(R.id.lvHabilidades);
+        listhabilidades.setAdapter(adapterHabilidades);
 
-        voltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        adicionar = (Button) findViewById(R.id.btnAdicionar);
 
     }
+
+    @Override
+    public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.btnSelecionar:
+                    area = (TextView) findViewById(R.id.tvGetArea);
+                    area.setText("Area de atuação: " + spnarea.getSelectedItem().toString());
+                    break;
+                case R.id.btnAdicionar:
+                    EditText edtHabilidades = (EditText) findViewById(R.id.edtHabilidades);
+                    String tvHabilidades = edtHabilidades.getText().toString();
+                    if(!tvHabilidades.isEmpty()){
+                        arrayHabilidades.add(tvHabilidades);
+                        adapterHabilidades.notifyDataSetChanged();
+                    }
+                    break;
+            }
+
+    }
+
 }
+
+//        voltar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                finish();
+//            }
+//        });
+
