@@ -7,12 +7,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class TelaIPrincipal extends AppCompatActivity implements View.OnClickListener {
 
     EditText nome, curso, telefone, email, end;
     Button cadastrar;
     CheckBox java, javascript, cobol, csharp, python, php;
+    RadioGroup turno;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ public class TelaIPrincipal extends AppCompatActivity implements View.OnClickLis
         csharp = (CheckBox) findViewById(R.id.cbCsharp);
         python = (CheckBox) findViewById(R.id.cbPy);
         php = (CheckBox) findViewById(R.id.cbPHP);
+        turno = (RadioGroup) findViewById(R.id.rgTurno);
 
 
         cadastrar = (Button) findViewById(R.id.btnNextScreen);
@@ -40,6 +44,7 @@ public class TelaIPrincipal extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
 
         String linguagens = getLinguagens();
+        String turno = getLinguagens();
 
         Intent i = new Intent(TelaIPrincipal.this, TelaConfirmDados.class);
         i.putExtra("extraNome", nome.getText().toString());
@@ -48,6 +53,7 @@ public class TelaIPrincipal extends AppCompatActivity implements View.OnClickLis
         i.putExtra("extraEnd", end.getText().toString());
         i.putExtra("extraCurso", curso.getText().toString());
         i.putExtra("extraLinguagens", linguagens);
+        i.putExtra("extraTurno", turno);
 
         startActivity(i);
     }
@@ -76,6 +82,15 @@ public class TelaIPrincipal extends AppCompatActivity implements View.OnClickLis
         }
 
         return linguagens;
+    }
+
+    private String getTurno(){
+        String sTurno = "Turno Selecionado: ";
+        if(turno.getCheckedRadioButtonId() != -1){
+            RadioButton turnoSelecionado = (RadioButton) findViewById(turno.getCheckedRadioButtonId());
+            sTurno += turnoSelecionado.getText().toString();
+        }
+        return sTurno;
     }
 
 }

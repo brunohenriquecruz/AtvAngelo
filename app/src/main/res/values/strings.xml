@@ -32,6 +32,9 @@
     <string name="rbVespertino">Verspertino</string>
     <string name="rbNoturno">Noturno</string>
     <string name="rbEad">EAD</string>
+    <string name="tvLabelTurno">Turnos preferidos </string>
+    <string name="tvGetTurno"> </string>
+    <string name="tvLabelSpinnerArea">Escolha área de atuação</string>
 
 
 </resources>

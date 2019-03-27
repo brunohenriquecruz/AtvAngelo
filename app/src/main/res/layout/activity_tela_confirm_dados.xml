@@ -66,9 +66,36 @@
         android:layout_height="wrap_content"
         android:text="@string/tvLinguagens" />
 
+    <TextView
+        android:id="@+id/tvLabelTurno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="@string/tvLabelTurno" />
+
+    <TextView
+        android:id="@+id/tvGetTurno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
     <Button
         android:id="@+id/btnVoltar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnVoltar" />
+
+    <TextView
+        android:id="@+id/tvLabelSpinnerArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="@string/tvLabelSpinnerArea" />
+
+    <Spinner
+        android:id="@+id/spArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
