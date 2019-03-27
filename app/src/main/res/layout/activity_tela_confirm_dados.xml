@@ -50,6 +50,22 @@
         android:text="@string/tvGetCurso"
         android:textAlignment="center" />
 
+    <TextView
+        android:id="@+id/tvLabelLinguagens"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvLabelDados"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:text="Linguagens" />
+
+    <TextView
+        android:id="@+id/tvLinguagens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvLinguagens" />
+
     <Button
         android:id="@+id/btnVoltar"
         android:layout_width="match_parent"

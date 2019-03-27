@@ -2,7 +2,7 @@
     <string name="app_name">AtvAngelo</string>
     <string name="ivLogo">Logo</string>
     <string name="tvMainScreen">7º - Sistemas de Informação</string>
-    <string name="tvLabel">Cadastro</string>
+    <string name="tvLabel">Cadastro Acadêmico</string>
     <string name="edtNome"/>
     <string name="edtEmail"/>
     <string name="edtTelefone"/>
@@ -10,11 +10,28 @@
     <string name="edtCurso"/>
     <string name="btnNextScreen">Cadastrar</string>
     <string name="tvLabelDados">Confirme seus Dados</string>
-    <string name="tvGetNome" />
-    <string name="tvGetEmail" />
-    <string name="tvGetTel" />
-    <string name="tvGetEnd" />
-    <string name="tvGetCurso" />
+    <string name="tvGetNome" >Digite seu nome</string>
+    <string name="tvGetEmail" >Digite seu email</string>
+    <string name="tvGetTel" >Digite seu telefone</string>
+    <string name="tvGetEnd" >Digite seu endereço</string>
+    <string name="tvGetCurso" >Digite seu curso</string>
+    <string name="tvLabelLinguagens">Linguagens</string>
+
 
     <string name="btnVoltar">Voltar</string>
+    <string name="cbJava">Java</string>
+    <string name="cbJavaScript">JavaScript</string>
+    <string name="cbPhp">PHP</string>
+    <string name="cbPython">Python</string>
+    <string name="cbCsharp">C#</string>
+    <string name="cbCobol">Cobol</string>
+    <string name="tvLinguagens" />
+    <string name="tvSelectLing">Selecione a linguagem apreendida</string>
+    <string name="tvTurno">Selecione o turno de preferência</string>
+    <string name="rbMatutino">Matutino</string>
+    <string name="rbVespertino">Verspertino</string>
+    <string name="rbNoturno">Noturno</string>
+    <string name="rbEad">EAD</string>
+
+
 </resources>

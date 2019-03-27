@@ -10,13 +10,8 @@ import org.w3c.dom.Text;
 
 public class TelaConfirmDados extends AppCompatActivity {
 
-    TextView nome;
-    TextView tel;
-    TextView email;
-    TextView end;
-    TextView curso;
+    TextView nome, tel, email, end, curso, linguagens;
     Button voltar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +25,7 @@ public class TelaConfirmDados extends AppCompatActivity {
         tel = (TextView) findViewById(R.id.tvGetTel);
         end = (TextView) findViewById(R.id.tvGetEnd);
         curso = (TextView) findViewById(R.id.tvGetCurso);
+        linguagens = (TextView) findViewById(R.id.tvLinguagens);
 
         voltar = (Button) findViewById(R.id.btnVoltar);
 
@@ -38,6 +34,7 @@ public class TelaConfirmDados extends AppCompatActivity {
         tel.setText(bundle.getString("extraTel"));
         end.setText(bundle.getString("extraEnd"));
         curso.setText(bundle.getString("extraCurso"));
+        linguagens.setText(bundle.getString("extraLinguagens"));
 
         voltar.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,62 +7,156 @@
     android:orientation="vertical"
     tools:context=".TelaIPrincipal">
 
-    <TextView
-        android:id="@+id/tvLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tvLabel"
-        android:textAlignment="center"
-        android:textSize="25sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/edtNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Digite seu nome"
-        android:inputType="textPersonName"
-        android:text="@string/edtNome" />
+            <TextView
+                android:id="@+id/tvLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvLabel"
+                android:textAlignment="center"
+                android:textSize="22sp" />
 
-    <EditText
-        android:id="@+id/edtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Digite seu email"
-        android:inputType="textEmailAddress"
-        android:text="@string/edtEmail" />
+            <EditText
+                android:id="@+id/edtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite seu nome"
+                android:inputType="textPersonName"
+                android:text="@string/edtNome" />
 
-    <EditText
-        android:id="@+id/edtTelefone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Digite seu telefone"
-        android:inputType="phone"
-        android:text="@string/edtTelefone" />
+            <EditText
+                android:id="@+id/edtEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite seu endereço"
+                android:inputType="textPersonName"
+                android:text="@string/edtEnd" />
 
-    <EditText
-        android:id="@+id/edtEnd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Digite seu endereço"
-        android:inputType="textPersonName"
-        android:text="@string/edtEnd" />
+            <EditText
+                android:id="@+id/edtCurso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite seu curso"
+                android:inputType="textPersonName"
+                android:text="@string/edtCurso" />
 
-    <EditText
-        android:id="@+id/edtCurso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Digite seu curso"
-        android:inputType="textPersonName"
-        android:text="@string/edtCurso" />
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite seu email"
+                android:inputType="textEmailAddress"
+                android:text="@string/edtEmail" />
 
-    <Button
-        android:id="@+id/btnNextScreen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnNextScreen" />
-</LinearLayout>
+            <EditText
+                android:id="@+id/edtTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite seu telefone"
+                android:inputType="phone"
+                android:text="@string/edtTelefone" />
+
+            <TextView
+                android:id="@+id/tvSelectLing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:text="@string/tvSelectLing" />
+
+            <CheckBox
+                android:id="@+id/cbJava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbJava" />
+
+            <CheckBox
+                android:id="@+id/cbCsharp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbCsharp" />
+
+            <CheckBox
+                android:id="@+id/cbPy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbPython" />
+
+            <CheckBox
+                android:id="@+id/cbCobol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbCobol" />
+
+            <CheckBox
+                android:id="@+id/cbJavaScript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbJavaScript" />
+
+            <CheckBox
+                android:id="@+id/cbPHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cbPhp" />
+
+            <TextView
+                android:id="@+id/tvTurno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvTurno"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rbMatutino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rbMatutino" />
+
+                <RadioButton
+                    android:id="@+id/rbVespertino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rbVespertino" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rbNoturno" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rbEad" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnNextScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnNextScreen" />
+        </LinearLayout>
+
+</ScrollView>
