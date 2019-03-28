@@ -39,6 +39,8 @@ public class TelaConfirmDados extends AppCompatActivity implements View.OnClickL
         curso = (TextView) findViewById(R.id.tvGetCurso);
         linguagens = (TextView) findViewById(R.id.tvLinguagens);
         turno = (TextView) findViewById(R.id.tvGetTurno);
+
+
         selecionar = (Button) findViewById(R.id.btnSelecionar);
         selecionar.setOnClickListener(this);
 
