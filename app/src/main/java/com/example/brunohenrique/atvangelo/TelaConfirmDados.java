@@ -58,7 +58,7 @@ public class TelaConfirmDados extends AppCompatActivity implements View.OnClickL
         spnarea.setAdapter(adapterArea);
 
         arrayHabilidades = new ArrayList<String>();
-        adapterHabilidades = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, arrayHabilidades);
+        adapterHabilidades = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayHabilidades); //android.R - Component Legacy
         listhabilidades = (ListView) findViewById(R.id.lvHabilidades);
         listhabilidades.setAdapter(adapterHabilidades);
         listhabilidades.setOnItemClickListener(this);
