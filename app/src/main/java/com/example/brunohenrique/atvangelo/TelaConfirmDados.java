@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class TelaConfirmDados extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     TextView nome, tel, email, end, curso, linguagens, turno, area;
-    Button selecionar, adicionar;
+    Button selecionar, adicionar, teste;
     Spinner spnarea;
     ListView listhabilidades;
     ArrayAdapter<String> adapterArea;
