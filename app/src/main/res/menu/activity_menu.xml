@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mnAdd"
+        android:title="@string/mnAdd"
+        android:icon="android:drawable/ic_menu_add"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/mnEditar"
+        android:title="@string/mnEditar" />
+    <item
+        android:id="@+id/mnDel"
+        android:title="@string/mnDel" />
+    <item
+        android:id="@+id/mnHelp"
+        android:title="@string/mnHelp" >
+        <menu >
+            <item
+                android:id="@+id/mnHelpDev"
+                android:title="@string/mnHelpDev" />
+            <item
+                android:id="@+id/mnHelpSupp"
+                android:title="@string/mnHelpSupp" />
+            <item
+                android:id="@+id/mnHelpLic"
+                android:title="@string/mnHelpLic" />
+        </menu>
+    </item>
+</menu>
