@@ -49,4 +49,14 @@
     <string name="edtHabilidades"/>
 
 
+    <!--Menu-->
+    <string name="mnAdd">Adicionar</string>
+    <string name="mnEditar">Editar</string>
+    <string name="mnDel">Deletar</string>
+    <string name="mnHelp">Ajuda</string>
+    <string name="mnHelpDev">Desenvolvimento</string>
+    <string name="mnHelpSupp">Suporte</string>
+    <string name="mnHelpLic">Licença</string>
+
+
 </resources>

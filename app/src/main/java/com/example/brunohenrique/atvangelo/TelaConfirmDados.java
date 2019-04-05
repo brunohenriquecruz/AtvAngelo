@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class TelaConfirmDados extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     TextView nome, tel, email, end, curso, linguagens, turno, area;
-    Button selecionar, adicionar;
+    Button selecionar, adicionar, teste;
     Spinner spnarea;
     ListView listhabilidades;
     ArrayAdapter<String> adapterArea;
@@ -39,6 +39,8 @@ public class TelaConfirmDados extends AppCompatActivity implements View.OnClickL
         curso = (TextView) findViewById(R.id.tvGetCurso);
         linguagens = (TextView) findViewById(R.id.tvLinguagens);
         turno = (TextView) findViewById(R.id.tvGetTurno);
+
+
         selecionar = (Button) findViewById(R.id.btnSelecionar);
         selecionar.setOnClickListener(this);
 
@@ -56,7 +58,7 @@ public class TelaConfirmDados extends AppCompatActivity implements View.OnClickL
         spnarea.setAdapter(adapterArea);
 
         arrayHabilidades = new ArrayList<String>();
-        adapterHabilidades = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, arrayHabilidades);
+        adapterHabilidades = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayHabilidades); //android.R - Component Legacy
         listhabilidades = (ListView) findViewById(R.id.lvHabilidades);
         listhabilidades.setAdapter(adapterHabilidades);
         listhabilidades.setOnItemClickListener(this);

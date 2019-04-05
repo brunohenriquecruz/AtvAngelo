@@ -3,12 +3,15 @@ package com.example.brunohenrique.atvangelo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 public class TelaIPrincipal extends AppCompatActivity implements View.OnClickListener {
 
@@ -16,6 +19,7 @@ public class TelaIPrincipal extends AppCompatActivity implements View.OnClickLis
     Button cadastrar;
     CheckBox java, javascript, cobol, csharp, python, php;
     RadioGroup turno;
+    TextView texto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,4 +97,44 @@ public class TelaIPrincipal extends AppCompatActivity implements View.OnClickLis
         return sTurno;
     }
 
+    public boolean onCreateOptionsMenu() {
+        return onCreateOptionsMenu();
+    }
+
+    public boolean onCreateOptionsMenu (Menu menu){
+
+        getMenuInflater().inflate(R.menu.activity_menu, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch(item.getItemId()){
+            case R.id.mnAdd:
+                texto.setText("Você selecionou adicionar!");
+                break;
+            case R.id.mnEditar
+                texto.setText("Você selecionou editar!");
+                break;
+            case R.id.mnDel:
+                texto.setText("Você selecionou deletar!");
+                break;
+            case R.id.mnHelp:
+                texto.setText("Você selecionou help!");
+            case R.id.mnHelpDev:
+                texto.setText("Você selecionou ajuda para desenvolvedor!");
+                break;
+            case R.id.mnHelpSupp:
+                texto.setText("Você selecionou ajuda para suporte!");
+                break;
+            case R.id.mnHelpLic:
+                texto.setText("Você selecionou ajuda para licença!");
+                break;
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
 }
