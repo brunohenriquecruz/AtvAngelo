@@ -14,6 +14,7 @@
         android:background="@android:color/background_dark"
         android:contentDescription="@string/ivLogo"
         android:scaleType="centerCrop"
+        android:src="@drawable/si"
         app:srcCompat="@drawable/si" />
 
     <TextView

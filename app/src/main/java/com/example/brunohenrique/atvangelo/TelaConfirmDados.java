@@ -92,10 +92,5 @@ public class TelaConfirmDados extends AppCompatActivity implements View.OnClickL
     }
 }
 
-//        voltar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                finish();
-//            }
-//        });
+
 
