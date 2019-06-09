@@ -115,7 +115,7 @@ public class TelaIPrincipal extends AppCompatActivity implements View.OnClickLis
             case R.id.mnAdd:
                 texto.setText("Você selecionou adicionar!");
                 break;
-            case R.id.mnEditar
+            case R.id.mnEditar:
                 texto.setText("Você selecionou editar!");
                 break;
             case R.id.mnDel:
